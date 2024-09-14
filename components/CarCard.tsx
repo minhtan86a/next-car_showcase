@@ -35,6 +35,7 @@ const CarCard = ({ car }: CarCardProps) => {
         <Image
           src={generateCarImageUrl(car)}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt="car model"
           priority
           className="object-contain"
@@ -61,7 +62,13 @@ const CarCard = ({ car }: CarCardProps) => {
           </div>
 
           <div className="flex flex-col justify-center items-center gap-2">
-            <Image src="/gas.svg" width={20} height={20} alt="gas" />
+            <Image
+              src="/gas.svg"
+              width={0}
+              height={0}
+              alt="gas"
+              style={{ width: "20px", height: "auto" }}
+            />
             <p className="text-[14px]">{city_mpg} MPG</p>
           </div>
         </div>

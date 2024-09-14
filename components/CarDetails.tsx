@@ -60,6 +60,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                       <Image
                         src={generateCarImageUrl(car)}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         alt="car model"
                         priority
                         className="object-contain"
@@ -71,6 +72,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                         <Image
                           src={generateCarImageUrl(car, "29")}
                           fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           alt="car model"
                           priority
                           className="object-contain"
@@ -80,6 +82,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                         <Image
                           src={generateCarImageUrl(car, "33")}
                           fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           alt="car model"
                           priority
                           className="object-contain"
@@ -89,6 +92,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                         <Image
                           src={generateCarImageUrl(car, "13")}
                           fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           alt="car model"
                           priority
                           className="object-contain"
